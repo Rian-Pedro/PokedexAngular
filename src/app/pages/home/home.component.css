@@ -1,0 +1,43 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.areaFiltros {
+  background-color: red;
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  box-shadow: 0 0 10px 0 #000;
+}
+
+.areaFiltros input[type=text]{
+  width: 30%;
+  line-height: 1.5rem;
+  padding-left: 10px;
+}
+
+.containerPokemon {
+  width: 70%;
+  background-color: #fff;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 0 5px 10px 0 #000;
+}
+
+@media (max-width: 414px) {
+  #selec {
+    display: none;
+  }
+
+  #text {
+    width: 100%
+  }
+
+}
+

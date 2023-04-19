@@ -1,1 +1,89 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.bug {
+  background-color: #006300;
+  color: #fff;
+}
+
+.dark {
+  background-color: #3d0087;
+  color: #fff;
+}
+
+.dragon {
+  background-color: #00fff7;
+  color: #fff;
+}
+
+.electric {
+  background-color: #fffb00;
+  color: #000;
+}
+
+.fairy {
+  background-color: #ff00d4;
+  color: #fff;
+}
+
+.fighting {
+  background-color: #ff5500;
+}
+
+.fire {
+  background-color: #ff3300;
+  color: #fff;
+}
+
+.flying {
+  background-color: #00a294;
+  color: #fff;
+}
+
+.ghost {
+  background-color: #570072;
+}
+
+.grass {
+  background-color: #00b900;
+  color: #fff;
+}
+
+.ground {
+  background-color: #9e5400;
+}
+
+.ice {
+  background-color: #80fdff;
+  color: #000;
+}
+
+.normal {
+  background-color: #363636c4;
+  color: #fff;
+}
+
+.poison {
+  background-color: #aa00ff;
+}
+
+.psychic {
+  background-color: #ff005d;
+}
+
+.rock {
+  background-color: #4d2500;
+}
+
+.steel {
+  background-color: #00ff99;
+  color: #000;
+}
+
+.water {
+  background-color: #3949ff;
+}

@@ -1,0 +1,49 @@
+.card {
+  width: 200px;
+  background-color: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 1.5px solid gray;
+  margin: 10px;
+}
+
+.card:hover{
+  scale: 1.05;
+}
+
+.boxIMG {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  background-color: #fff;
+}
+
+.content {
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+}
+
+.typeBox {
+  width: 100px;
+  padding: 2px 0;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 1px solid #fff;
+}
+
+.containerType {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+}

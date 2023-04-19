@@ -1,0 +1,42 @@
+<main>
+  <div class="areaFiltros">
+    <input type="text"[(ngModel)]="namePoke" placeholder="Ex: Pikachu" id="text">
+    <select name="selec" id="selec" [(ngModel)]="type">
+      <option value="" default>Padrao</option>
+      <option value="bug">{{'bug' | titlecase}}</option>
+      <option value="dark">{{'dark' | titlecase}}</option>
+      <option value="dragon">{{'dragon' | titlecase}}</option>
+      <option value="electric">{{'electric' | titlecase}}</option>
+      <option value="fairy">{{'fairy' | titlecase}}</option>
+      <option value="fighting">{{'fighting' | titlecase}}</option>
+      <option value="fire">{{'fire' | titlecase}}</option>
+      <option value="flying">{{'flying' | titlecase}}</option>
+      <option value="ghost">{{'ghost' | titlecase}}</option>
+      <option value="grass">{{'grass' | titlecase}}</option>
+      <option value="ground">{{'ground' | titlecase}}</option>
+      <option value="ice">{{'ice' | titlecase}}</option>
+      <option value="normal">{{'normal' | titlecase}}</option>
+      <option value="poison">{{'poison' | titlecase}}</option>
+      <option value="psychic">{{'psychic' | titlecase}}</option>
+      <option value="rock">{{'rock' | titlecase}}</option>
+      <option value="steel">{{'steel' | titlecase}}</option>
+      <option value="water">{{'water' | titlecase}}</option>
+    </select>
+  </div>
+  <div class="containerPokemon" *ngIf="pokemons.length > 0; else teste">
+    <div *ngFor="let pokemon of pokemons" class="teste">
+      <div *ngIf="pokemon.types.includes(type) || type == ''">
+        <app-card
+          *ngIf="pokemon.nome.includes(namePoke)"
+          [nome]="pokemon.nome"
+          [sprite]="pokemon.sprite"
+          [id]="pokemon.id"
+          [typesName]="pokemon.types"
+        ></app-card>
+      </div>
+    </div>
+  </div>
+</main>
+<ng-template #teste>
+  loading ...
+</ng-template>

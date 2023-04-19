@@ -1,0 +1,12 @@
+<a [routerLink]="['about', id]" class="card">
+  <div [ngClass]="['boxIMG']">
+    <img [src]="sprite" width="150px">
+  </div>
+  <div class="content">
+    <p>Nome: {{nome | titlecase}}</p>
+    <p>Id: {{id}}</p>
+    <div class="containerType">
+      <p *ngFor="let type of typesName" [ngClass]="[type, 'typeBox']">{{type | titlecase}}</p>
+    </div>
+  </div>
+</a>

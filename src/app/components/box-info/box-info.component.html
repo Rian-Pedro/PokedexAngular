@@ -1,0 +1,17 @@
+<div [ngClass]="['boxInfo', (ultimo) ? 'ultimo' : '' ]">
+  <div class="title">{{text}}</div>
+
+  <div class="content types" *ngIf="types">
+    <p [ngClass]="type" *ngFor="let type of types">{{type}}</p>
+  </div>
+
+  <div class="content" *ngIf="content">
+    {{content}}
+  </div>
+
+  <div class="content habilidade" *ngIf="habs">
+    <div *ngFor="let hab of habs">
+      <p>{{hab.name}} <span *ngIf="hab.is_hidden" class="hidden">(Habilidade Escondida)</span></p>
+    </div>
+  </div>
+</div>

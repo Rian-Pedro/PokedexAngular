@@ -1,0 +1,50 @@
+.boxInfo {
+  display: flex;
+  justify-content: center;
+  padding: 5px 5px 5px 0;
+  border-top: 1px solid #5b5b5b;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.ultimo {
+  border-bottom: 1px solid #5b5b5b;
+}
+
+.boxInfo .title {
+  width: 30%;
+  word-wrap: break-word;
+  padding-right: 5px;
+  border-right: 1px solid #5b5b5b;
+  text-align: start;
+}
+.boxInfo .content {
+  width: 60%;
+  text-align: start;
+  padding-left: 15px;
+}
+
+.types{
+  width: 10%;
+  display: flex;
+  gap: 10px;
+  padding-left: 10px;
+}
+
+@media (max-width: 414px) {
+  .types {
+    font-size: .8em;
+    width: 5%;
+  }
+}
+
+.types p {
+  width: 100px;
+  text-align: center;
+  padding: 1px 0px;
+  border-radius: 5px;
+}
+
+.hidden {
+  font-size: .8em;
+}

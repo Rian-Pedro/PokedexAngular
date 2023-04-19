@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="image">
+    <img [src]="pokeInformations.sprite.front_default" width="300px">
+  </div>
+  <div class="info">
+    <h2>Informações do Pokemon</h2>
+    <app-box-info
+      text="Nome"
+      [content]="pokeInformations.nome | titlecase"
+    ></app-box-info>
+
+    <app-box-info
+      text="N°"
+      [content]="pokeInformations.id"
+    ></app-box-info>
+
+    <app-box-info
+      text="Types"
+      [types]="pokeInformations.tipos"
+    ></app-box-info>
+
+    <app-box-info
+      text="Altura"
+      [content]="pokeInformations.altura + ' m'"
+    ></app-box-info>
+
+    <app-box-info
+      text="Peso"
+      [content]="pokeInformations.peso + ' kg'"
+    ></app-box-info>
+
+    <app-box-info
+      text="Habilidades"
+      [habs]="pokeInformations.habilidades"
+      [ultimo]="true"
+    ></app-box-info>
+
+  </div>
+</div>
