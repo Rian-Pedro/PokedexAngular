@@ -23,9 +23,12 @@
 .image {
   border-radius: 2px 10px 2px 10px;
   box-shadow: 0 0 30px 0 #595959bf;
+  border: 1px solid #555;
 }
 
 .info {
+  border: 1px solid #555;
+  border-radius: 5px;
   width: 40%;
   padding: 50px 10px;
   text-align: center;

@@ -27,7 +27,7 @@
     <div *ngFor="let pokemon of pokemons" class="teste">
       <div *ngIf="pokemon.types.includes(type) || type == ''">
         <app-card
-          *ngIf="pokemon.nome.includes(namePoke)"
+          *ngIf="pokemon.nome.includes(namePoke.toLowerCase())"
           [nome]="pokemon.nome"
           [sprite]="pokemon.sprite"
           [id]="pokemon.id"

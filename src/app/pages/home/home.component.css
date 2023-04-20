@@ -18,6 +18,18 @@ main {
   width: 30%;
   line-height: 1.5rem;
   padding-left: 10px;
+  border: 1px solid #000;
+  border-radius: 2px;
+}
+
+.areaFiltros select {
+  border: 1px solid #000;
+  border-radius: 2px;
+}
+
+.areaFiltros select:focus
+, .areaFiltros input[type=text]:focus{
+  outline: 0;
 }
 
 .containerPokemon {
