@@ -23,7 +23,7 @@
       <option value="water">{{'water' | titlecase}}</option>
     </select>
   </div>
-  <div class="containerPokemon" id="conteudo" style="display: none;">
+  <div class="containerPokemon" id="conteudo">
     <div *ngFor="let pokemon of pokemons">
       <div *ngIf="pokemon.types.includes(type) || type == ''">
         <app-card
@@ -36,7 +36,7 @@
       </div>
     </div>
   </div>
-  <div id="loading">
+  <div id="loading" style="display: none;">
     loading <div></div>
   </div>
 </main>

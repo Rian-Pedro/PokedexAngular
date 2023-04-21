@@ -20,12 +20,12 @@ export class HomeComponent {
 
   ngOnInit() {
      this.getPokemons();
-     let loading: HTMLDivElement = document.querySelector("#loading") as HTMLDivElement;
-     let conteudo: HTMLDivElement = document.querySelector("#conteudo") as HTMLDivElement;
-     $(window).on("load", () => {
-      loading.style.display = "none";
-      conteudo.style.display = "flex";
-     })
+    //  let loading: HTMLDivElement = document.querySelector("#loading") as HTMLDivElement;
+    //  let conteudo: HTMLDivElement = document.querySelector("#conteudo") as HTMLDivElement;
+    //  $(window).on("load", () => {
+    //   loading.style.display = "none";
+    //   conteudo.style.display = "flex";
+    //  })
   }
 
    async getPokemons(): Promise<void> {
