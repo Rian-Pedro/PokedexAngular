@@ -9,6 +9,7 @@ import { About } from '../About';
 @Injectable({
   providedIn: 'root'
 })
+
 export class PokemonService {
 
   constructor(private http: HttpClient) {}

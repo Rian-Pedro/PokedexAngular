@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Pokemon } from 'src/app/Pokemon';
+import * as $ from 'jquery';
 
 import { PokemonService } from 'src/app/services/pokemon.service';
 
@@ -11,16 +11,21 @@ import { PokemonService } from 'src/app/services/pokemon.service';
 })
 export class HomeComponent {
 
-  pokemons: any = [ ];
+  pokemons: any = [];
   namePoke: string = '';
   type: String = '';
   permite: Boolean = false;
 
-  constructor(private pokemonService: PokemonService) {
-  }
+  constructor(private pokemonService: PokemonService) {}
 
   ngOnInit() {
      this.getPokemons();
+     let loading: HTMLDivElement = document.querySelector("#loading") as HTMLDivElement;
+     let conteudo: HTMLDivElement = document.querySelector("#conteudo") as HTMLDivElement;
+     $(window).on("load", () => {
+      loading.style.display = "none";
+      conteudo.style.display = "flex";
+     })
   }
 
    async getPokemons(): Promise<void> {

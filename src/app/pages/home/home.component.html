@@ -1,4 +1,4 @@
-<main>
+<main class="main">
   <div class="areaFiltros">
     <input type="text"[(ngModel)]="namePoke" placeholder="Ex: Pikachu" id="text">
     <select name="selec" id="selec" [(ngModel)]="type">
@@ -23,8 +23,8 @@
       <option value="water">{{'water' | titlecase}}</option>
     </select>
   </div>
-  <div class="containerPokemon" *ngIf="pokemons.length > 0; else teste">
-    <div *ngFor="let pokemon of pokemons" class="teste">
+  <div class="containerPokemon" id="conteudo" style="display: none;">
+    <div *ngFor="let pokemon of pokemons">
       <div *ngIf="pokemon.types.includes(type) || type == ''">
         <app-card
           *ngIf="pokemon.nome.includes(namePoke.toLowerCase())"
@@ -36,7 +36,7 @@
       </div>
     </div>
   </div>
+  <div id="loading">
+    loading <div></div>
+  </div>
 </main>
-<ng-template #teste>
-  loading ...
-</ng-template>
